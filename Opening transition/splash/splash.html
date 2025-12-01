@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Splash Screen</title>
+    <link rel="stylesheet" href="splash.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg viewBox="0 0 200 200" width="200" height="200">
+            <circle id="spinner" 
+                    cx="100" 
+                    cy="100" 
+                    r="50" 
+                    fill="none" 
+                    stroke="#4285F4" 
+                    stroke-width="8" 
+                    stroke-dasharray="80, 200" 
+                    stroke-linecap="round"
+                    stroke-dashoffset="0">
+            </circle>
+            <text x="50%" 
+                  y="50%" 
+                  text-anchor="middle" 
+                  dy=".3em" 
+                  font-family="Arial, sans-serif" 
+                  font-size="14"
+                  fill="#333">
+                Loading...
+            </text>
+        </svg>
+    </div>
+    <script>
+        // Example: Hide splash after 3 seconds (for demo)
+        setTimeout(() => {
+            document.querySelector('.splash-container').style.display = 'none';
+        }, 3000);
+    </script>
+</body>
+</html>
