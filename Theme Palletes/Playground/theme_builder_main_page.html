@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Palette Playground</title>
+  <link rel="stylesheet" href="./theme_builder_CSSs/variables.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/main_page_style.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/default.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/dark.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/soothing.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/ocean_blue.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/sunset_orange.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/forest_green.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/neon_purple.css" />
+  <link rel="stylesheet" href="./theme_builder_CSSs/themes/glass.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Theme Palette Playground</h1>
+    </header>
+
+    <div class="tools-wrapper">
+      <div class="color-picker-tool">
+        <label for="colorPicker">Choose a color:</label>
+        <input type="color" id="colorPicker" value="#4a6bff">
+      </div>
+    </div>
+
+    <div class="toggle-wrapper" id="themeToggle">
+      <div class="toggle-highlight" id="toggleHighlight"></div>
+      <div class="toggle-btn active" data-mode="all">All Themes</div>
+      <div class="toggle-btn" data-mode="choose">Choose Theme</div>
+    </div>
+
+    <main>
+      <div class="content" id="contentBox"></div>
+    </main>
+  </div>
+
+  <script type="module" src="./theme_Builder_scripts/app.js"></script>
+</body>
+</html>

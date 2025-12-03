@@ -1,0 +1,5 @@
+- "Theme Palletes\Playground\theme_builder_main_page.html" is main entry of webpage
+- "Theme Palletes\Playground\theme_builder_main_script.js" is main script of 
+- rest of newly created scripts will be kept at "Theme Palletes\Playground\theme_Builder_scripts" folder
+- current webpage's main css kept at "Theme Palletes\Playground\Theme_Builder_CSSs\page_style.css"  
+- our main goal theme building css will be kept at "Theme Palletes\Playground\theme_builder_CSSs\themes" folder  
